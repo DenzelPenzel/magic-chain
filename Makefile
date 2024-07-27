@@ -42,6 +42,10 @@ gosec:
 	gosec -exclude G104,G304 ./...
 	@echo "$(GREEN)done $(COLOR_END)"
 
+.PHONY: test
+test:
+	go test -v ./internal/... -timeout $(TEST_LIMIT)
+
 .PHONY: docker-build
 docker-build:
 	@echo "$(GREEN) Building docker image...$(COLOR_END)"
