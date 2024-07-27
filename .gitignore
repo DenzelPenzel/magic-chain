@@ -6,3 +6,4 @@ genesis.json
 /.devnet/
 packages/contracts-bedrock/deploy-config/devnetL1.json
 tmp
+vendor
